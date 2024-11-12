@@ -5,15 +5,15 @@
     "passes": 3,
     "pending": 0,
     "failures": 5,
-    "start": "2024-11-12T20:03:14.847Z",
-    "end": "2024-11-12T20:03:15.120Z",
-    "duration": 273
+    "start": "2024-11-12T20:44:31.260Z",
+    "end": "2024-11-12T20:44:31.536Z",
+    "duration": 276
   },
   "tests": [
     {
       "title": "is a floating number",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is a floating number",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected false to be true",
@@ -26,7 +26,7 @@
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected 1072 to be close to 2171.2 +/- 0.2",
@@ -45,7 +45,7 @@
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected 1099.2 to be close to 1188.4444444444443 +/- 0.2",
@@ -83,7 +83,7 @@
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js avg_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected 73.28 to be close to 39.614814814814814 +/- 0.2",
@@ -98,7 +98,7 @@
     {
       "title": "is a floating number",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is a floating number",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected false to be true",
@@ -111,7 +111,7 @@
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_fahrenheit is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected 1072 to be close to 2171.2 +/- 0.2",
@@ -123,7 +123,7 @@
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js tot_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected 1099.2 to be close to 1188.4444444444443 +/- 0.2",
@@ -147,7 +147,7 @@
     {
       "title": "is accurate with a tolerance of 0.2 degrees",
       "fullTitle": "index.js avg_temperature_in_celsius is accurate with a tolerance of 0.2 degrees",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "message": "expected 73.28 to be close to 39.614814814814814 +/- 0.2",

@@ -3,7 +3,7 @@ const celsiusTemps = [25, 18, 15, 28, 20, 23, 30, 22, 24, 21, 27, 19, 26, 17, 29
 const fahrenheitTemps = [32, 70, 80, 72, 68, 75, 82, 65, 77, 78, 73, 79, 71, 74, 76];
 
 //* Then work on the conversion of the temperature from Celsius to Fahrenheit (or viceversa)
-const convertedFromCelsiusToFahrenheit = celsiusTemps.map((x) => (x * 9/5) + 32);   
+const convertedFromCelsiusToFahrenheit = celsiusTemps.map((x) => (x * 9/5) + 32);
 //! Start the calculation of the total temperatures
 //* Then apply the conversion to calculate the total in the other unit of measurement
 //* Call the variables: tot_temperature_in_fahrenheit and tot_temperature_in_celsius
