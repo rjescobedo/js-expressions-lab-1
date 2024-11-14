@@ -4,21 +4,24 @@ const fahrenheitTemps = [32, 70, 80, 72, 68, 75, 82, 65, 77, 78, 73, 79, 71, 74,
 
 //* Then work on the conversion of the temperature from Celsius to Fahrenheit (or viceversa)
 const convertedFromCelsiusToFahrenheit = celsiusTemps.map((x) => (x * 9/5) + 32);
+//Formula to pass from F to C: (tempInFahrenheit - 32) \* 5 / 9
+
+const reducedCelsiustoFahrenheit = convertedFromCelsiusToFahrenheit.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 //! Start the calculation of the total temperatures
 //* Then apply the conversion to calculate the total in the other unit of measurement
 //* Call the variables: tot_temperature_in_fahrenheit and tot_temperature_in_celsius
-const tot_temperature_in_celsius = convertedFromCelsiusToFahrenheit.reduce((accumulator, currentValue) => accumulator + currentValue);
-console.log("Total Temperature in Celcius: " + tot_temperature_in_celsius);
 
-const tot_temperature_in_fahrenheit = fahrenheitTemps.reduce((accumulator, currentValue) => accumulator + currentValue);
+const tot_temperature_in_fahrenheit = fahrenheitTemps.reduce((accumulator, currentValue) => accumulator + currentValue, 0) + reducedCelsiustoFahrenheit;
 console.log("Total Temperature in Fahrenheit: " + tot_temperature_in_fahrenheit);
 
+const tot_temperature_in_celsius = (tot_temperature_in_fahrenheit - 32) * 5/9;
+console.log("Total Temperature in Celcius: " + tot_temperature_in_celsius);
 //! Start the calculation of the average temperatures
 //* Call the variables: avg_temperature_in_fahrenheit and avg_temperature_in_celsius
-const avg_temperature_in_celsius = tot_temperature_in_celsius / celsiusTemps.length;
+const avg_temperature_in_celsius = tot_temperature_in_celsius / (celsiusTemps.length + fahrenheitTemps.length);
 console.log("Average Temperature in Cesius: " + avg_temperature_in_celsius);
 
-const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / fahrenheitTemps.length;
+const avg_temperature_in_fahrenheit = tot_temperature_in_fahrenheit / (celsiusTemps.length + fahrenheitTemps.length);
 console.log("Average Temperature in Fahrenheit: " + avg_temperature_in_fahrenheit);
 //! Console.log the results for your own inspection if you'd like
 
@@ -26,8 +29,8 @@ console.log("Average Temperature in Fahrenheit: " + avg_temperature_in_fahrenhei
 //* This way you can export them to the test file, this is essential for the tests to work
 
 module.exports = {
-    // tot_temperature_in_fahrenheit,
-    // tot_temperature_in_celsius,
-    // avg_temperature_in_fahrenheit,
-    // avg_temperature_in_celsius
+    tot_temperature_in_fahrenheit,
+    tot_temperature_in_celsius,
+    avg_temperature_in_fahrenheit,
+    avg_temperature_in_celsius
 };
